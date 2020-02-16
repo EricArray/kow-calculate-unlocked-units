@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KoW 3 - Calculate Unlocked Units</title>
+    <script type="text/javascript" src="calculateCanAdd.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+  <body>
+    <h1>KoW 3 - Calculate Unlocked Units</h1>
+    <h2>Units already in the army</h2>
+    <p id="inputs">
+      <label>
+        Infantry Hordes
+        <input id="hordeCount" type="number" value="0">
+      </label>
+
+      <label>
+        Large Infantry Hordes
+        <input id="largeInfCount" type="number" value="0">
+      </label>
+
+      <label>
+        Infantry Regiment Units
+        <input id="regimentCount" type="number" value="0">
+      </label>
+
+      <label>
+        Heroes
+        <input id="heroCount" type="number" value="0">
+      </label>
+
+      <label>
+        War Engines
+        <input id="warEngineCount" type="number" value="0">
+      </label>
+
+      <label>
+        Monsters/Titans
+        <input id="monsterCount" type="number" value="0">
+      </label>
+    </p>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h2>Results</h2>
+    <div id="results">
+      <p>Can add further Heroes? <span id="canAddHero"></span></p>
+      <p>Can add further War Engines? <span id="canAddWarEngine"></span></p>
+      <p>Can add further Monsters/Titans? <span id="canAddMonster"></span></p>
+    </div>
+
+    <hr>
+
+    <div id="footer">
+      Source: <a href="https://github.com/ernokstein/kow-calculate-unlocked-units">https://github.com/ernokstein/kow-calculate-unlocked-units</a> - Email: ernokstein@gmail.com
+    </div>
+  </body>
+</html>
